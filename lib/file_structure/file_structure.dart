@@ -1,3 +1,3 @@
 export 'model/file.dart';
-export 'view/file_page.dart';
-export 'widget/file_item.dart';
+export 'view/file_view.dart';
+export 'widget/widget.dart';

@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:lark_innovation/constant.dart';
 import 'package:lark_innovation/file_structure/file_structure.dart';
 
-class FilePage extends StatelessWidget {
-  const FilePage({Key? key}) : super(key: key);
+class FileView extends StatelessWidget {
+  const FileView({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,12 +11,7 @@ class FilePage extends StatelessWidget {
       appBar: AppBar(),
       body: ListView.builder(
         itemCount: data.length,
-        itemBuilder: (context, index) {
-          return FileItem(
-            file: data[index],
-            level: 0,
-          );
-        },
+        itemBuilder: (context, index) => FileItem(file: data[index]),
       ),
     );
   }

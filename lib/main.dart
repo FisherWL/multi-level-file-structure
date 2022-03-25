@@ -1,4 +1,4 @@
 import 'package:flutter/material.dart';
-import 'app.dart';
+import 'package:lark_innovation/app.dart';
 
 void main() => runApp(const FileApp());
